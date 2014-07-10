@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<SplitPane id="" dividerPositions="0.19597989949748743" focusTraversable="true" orientation="VERTICAL" prefHeight="400.0" prefWidth="1250.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.TimetableController">
+  <items>
+    <AnchorPane maxHeight="75.0" minHeight="75.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+      <children>
+        <MenuBar style="" stylesheets="@../style/menu.css" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+          <menus>
+            <Menu mnemonicParsing="false" text="File">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#open" text="Open Solution" />
+                <MenuItem mnemonicParsing="false" onAction="#save" text="Save Solution" />
+                <SeparatorMenuItem mnemonicParsing="false" />
+                <MenuItem mnemonicParsing="false" text="Close" />
+              </items>
+            </Menu>
+          </menus>
+        </MenuBar>
+        <HBox alignment="CENTER_LEFT" maxHeight="50.0" prefHeight="50.0" prefWidth="800.0" spacing="10.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="26.0">
+          <children>
+            <RadioButton fx:id="teacher" mnemonicParsing="false" selected="true" text="Teacher">
+              <font>
+                <Font name="Verdana Bold" size="16.0" fx:id="x1" />
+              </font>
+              <toggleGroup>
+                <ToggleGroup fx:id="listOption" />
+              </toggleGroup>
+              <HBox.margin>
+                <Insets left="10.0" />
+              </HBox.margin>
+            </RadioButton>
+                  <Region maxWidth="50.0" prefHeight="200.0" prefWidth="200.0" />
+            <RadioButton fx:id="course" font="$x1" mnemonicParsing="false" text="Course" toggleGroup="$listOption" />
+                  <Region maxWidth="50.0" prefHeight="200.0" prefWidth="200.0" />
+            <RadioButton fx:id="room" font="$x1" mnemonicParsing="false" text="Room" toggleGroup="$listOption" />
+                  <Region prefHeight="200.0" prefWidth="200.0" />
+                  <Button fx:id="showAll" defaultButton="true" mnemonicParsing="false" onAction="#showAll" text="Choose course" visible="false">
+                     <font>
+                        <Font name="Verdana" size="14.0" />
+                     </font>
+                  </Button>
+                  <Region prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+            <Button fx:id="doc" maxHeight="32.0" maxWidth="32.0" minHeight="32.0" minWidth="32.0" mnemonicParsing="false" onAction="#printDoc" style="-fx-background-color: transparent;" text="" />
+                  <Region maxWidth="50.0" prefHeight="200.0" prefWidth="200.0" />
+            <Button fx:id="pdf" maxHeight="32.0" maxWidth="32.0" minHeight="32.0" minWidth="32.0" mnemonicParsing="false" onAction="#printPdf" style="-fx-background-color: transparent;" text="" />
+                  <Region prefHeight="50.0" prefWidth="39.0" />
+          </children>
+        </HBox>
+      </children>
+    </AnchorPane>
+    <BorderPane fx:id="borderPane" prefHeight="200.0" prefWidth="200.0">
+      <bottom>
+        <HBox alignment="CENTER_LEFT" maxHeight="25.0" prefHeight="25.0" prefWidth="1248.0" spacing="7.0">
+          <children>
+            <HBox id="HBox" alignment="CENTER" spacing="5.0">
+              <children>
+                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="GREEN" height="20.0" stroke="BLACK" strokeType="INSIDE" width="20.0">
+                  <HBox.margin>
+                    <Insets left="10.0" />
+                  </HBox.margin>
+                </Rectangle>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="No constraints violated">
+                  <font>
+                    <Font size="14.0" fx:id="x2" />
+                  </font>
+                </Text>
+              </children>
+            </HBox>
+            <HBox id="HBox" alignment="CENTER" spacing="5.0">
+              <children>
+                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="BLUE" height="20.0" stroke="BLACK" strokeType="INSIDE" width="20.0">
+                  <HBox.margin>
+                    <Insets left="10.0" />
+                  </HBox.margin>
+                </Rectangle>
+                <Text font="$x2" strokeType="OUTSIDE" strokeWidth="0.0" text="One soft constraints violated" />
+              </children>
+            </HBox>
+            <HBox id="HBox" alignment="CENTER" spacing="5.0">
+              <children>
+                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="RED" height="20.0" stroke="BLACK" strokeType="INSIDE" width="20.0">
+                  <HBox.margin>
+                    <Insets left="10.0" />
+                  </HBox.margin>
+                </Rectangle>
+                <Text font="$x2" strokeType="OUTSIDE" strokeWidth="0.0" text="More than one hard constraints violated" />
+              </children>
+            </HBox>
+          </children>
+          <BorderPane.margin>
+            <Insets />
+          </BorderPane.margin>
+        </HBox>
+      </bottom>
+      <left>
+        <ListView fx:id="popList" minWidth="250.0" prefHeight="200.0" prefWidth="200.0" style="-fx-font-size:16px;">
+          <stylesheets>
+            <URL value="@../../../NetBeansProjects/FinalProject_v7/src/style/style.css" />
+          </stylesheets>
+          <tooltip>
+            <Tooltip text="Alternative solution. Fitness is a measure &#10;of how good a solution . Best solution&#10;has low fitness." />
+          </tooltip>
+        </ListView>
+      </left>
+    </BorderPane>
+  </items>
+</SplitPane>

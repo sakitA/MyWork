@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="660.0" minWidth="800.0" prefHeight="400.0" prefWidth="600.0" styleClass="root" stylesheets="@../style/main.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainpageController">
+   <children>
+      <MenuBar prefHeight="28.0" prefWidth="600.0" stylesheets="@../style/menu.css" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#exit" text="Exit" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#options" text="Option" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+                  <MenuItem mnemonicParsing="false" onAction="#openGuidline" text="Guideline" />
+              <MenuItem mnemonicParsing="false" onAction="#about" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <ImageView fitHeight="75.0" fitWidth="816.0" layoutX="14.0" layoutY="64.0" onMouseClicked="#goCMPE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="33.0">
+         <image>
+            <Image url="@../images/emu_logo2.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <VBox prefHeight="200.0" prefWidth="100.0" spacing="15.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="300.0" AnchorPane.topAnchor="135.0">
+         <children>
+            <Text id="guide-text" strokeType="OUTSIDE" strokeWidth="0.0" style="" text="TimeTable Quick Guide" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Step 1: In order to create timetables you first have to set resources. In universities resources are, in most cases, teachers, lectures, and rooms. You can import or export  an exsisting resource file.  In order to import or export a resource file please choose 'Import Resource'  or 'Export Resource' from 'File' menu when you open Setresource window respectively." textAlignment="JUSTIFY" wrappingWidth="500.0">
+               <font>
+                  <Font name="Arial Bold Italic" size="18.0" fx:id="x2" />
+               </font>
+            </Text>
+            <Text font="$x2" strokeType="OUTSIDE" strokeWidth="0.0" text="Step 2: When you finish to set resources 'Generate Solution' button will be active. To generate TimeTable solution please click the 'Generate Solution Button'. You can change  Genetic Algorithm properties. In order to change these properties please choose 'Options' from 'Edit' menu." textAlignment="JUSTIFY" wrappingWidth="500.0" />
+            <Text font="$x2" strokeType="OUTSIDE" strokeWidth="0.0" text="Step 3: In this step everything will be finished and you can show timetable solution when you click the 'Show Result' button. You can show an exsisting solution or you can save  a new one. In order to open and save a solution please  choose 'Open Solution' or 'Save Solution' from 'File' menu when you open Show Result window respectively" textAlignment="JUSTIFY" wrappingWidth="500.0" />
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" layoutX="581.0" layoutY="231.0" AnchorPane.bottomAnchor="95.0" AnchorPane.rightAnchor="35.0">
+         <children>
+            <Button layoutX="636.0" layoutY="237.0" minWidth="200.0" mnemonicParsing="false" onAction="#setResource" prefHeight="29.0" prefWidth="200.0" stylesheets="@../style/button.css" text="Set Resourcce">
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#355b82" />
+                        <Stop color="#162739" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <tooltip>
+                  <Tooltip text="Set all courses, teachers, and rooms" />
+               </tooltip>
+            </Button>
+            <Region prefHeight="110.0" prefWidth="200.0" VBox.vgrow="ALWAYS" />
+            <Button layoutX="673.0" layoutY="330.0" minWidth="200.0" mnemonicParsing="false" onAction="#generateSolution" stylesheets="@../style/button.css" text="Generate Solution">
+               <tooltip>
+                  <Tooltip text="Start Genetic Algorithm" />
+               </tooltip></Button>
+            <Region prefHeight="114.0" prefWidth="200.0" />
+            <Button layoutX="597.0" layoutY="415.0" minWidth="200.0" mnemonicParsing="false" onAction="#showResult" stylesheets="@../style/button.css" text="Show Result">
+               <tooltip>
+                  <Tooltip text="Show Time Table" />
+               </tooltip></Button>
+         </children>
+      </VBox>
+      <HBox id="HBox" alignment="CENTER" layoutX="571.0" layoutY="579.0" spacing="2.0" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="15.0">
+         <children>
+            <Text fill="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="©Powered by">
+               <font>
+                  <Font size="14.0" fx:id="x3" />
+               </font>
+            </Text>
+            <Hyperlink font="$x3" mouseTransparent="false" onAction="#goSA" pickOnBounds="false" text="Sakit Atakishiyev" textFill="#00ffe0" underline="true" visited="false" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

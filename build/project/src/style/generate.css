@@ -1,0 +1,50 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*
+    Created on : Jun 1, 2014, 10:23:30 PM
+    Author     : Sakit
+*/
+ .root{-fx-background-image:url("../images/background.jpg")}.button {
+    -fx-background-color:
+        rgba(0,0,0,0.08),
+        linear-gradient(#5a61af, #51536d),
+        linear-gradient(#e4fbff 0%,#cee6fb 10%, #a5d3fb 50%, #88c6fb 51%, #d5faff 100%);
+    -fx-background-insets: 0 0 0 0,0,1;
+    -fx-background-radius: 5,5,4;
+    -fx-padding: 3 30 3 30;
+    -fx-text-fill: #242d35;
+    -fx-font-size: 22px;
+
+}
+
+.button:hover{
+    -fx-background-color: linear-gradient(#768aa5 0%, #849cbb 5%, #5877a2 50%, #486a9a 51%, #4a6c9b 100%);
+}
+.progress-bar .bar{
+
+    -fx-background-insets:2,2,2,2;
+}
+
+#operation{
+    -fx-font-size: 24px;
+    -fx-font-family: "Arial Black";
+    -fx-fill: #818181;
+    -fx-effect: innershadow(three-pass-box,rgba(0,0,0,0.7),6,0.0,0,2);
+}
+
+#result{
+    -fx-font-size: 24px;
+    -fx-font-family: "Arial Black";
+    -fx-fill: #818181;
+    -fx-effect: innershadow(three-pass-box,rgba(0,0,0,0.7),6,0.0,0,2);
+}
+
+#load{
+    -fx-font-size: 12px;
+    -fx-font-family: "Arial Black";
+    -fx-fill: #818181;
+    -fx-effect: innershadow(three-pass-box,rgba(0,0,0,0.7),6,0.0,0,2);
+}

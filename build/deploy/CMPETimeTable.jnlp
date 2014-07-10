@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="CMPETimeTable.jnlp">
+  <information>
+    <title>CMPETimeTable</title>
+    <vendor>Sakit Atakishiyev</vendor>
+    <description>Sample JavaFX 2.0 application.</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <jfx:javafx-runtime version="2.2+" href="http://javadl.sun.com/webapps/download/GetFile/javafx-latest/windows-i586/javafx2.jnlp"/>
+  </resources>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="CMPETimeTable.jar" size="11294248" download="eager" />
+    <jar href="libs/controlsfx-8.0.6.jar" size="916060" download="eager" />
+    <jar href="libs/derby.jar" size="3019168" download="eager" />
+    <jar href="libs/dom4j-1.6.1.jar" size="332530" download="eager" />
+    <jar href="libs/itextpdf-5.5.1.jar" size="2229707" download="eager" />
+    <jar href="libs/poi-3.10-FINAL-20140208.jar" size="2093719" download="eager" />
+    <jar href="libs/poi-ooxml-3.10-FINAL-20140208.jar" size="1086184" download="eager" />
+    <jar href="libs/poi-ooxml-schemas-3.10-FINAL-20140208.jar" size="5471807" download="eager" />
+    <jar href="libs/xmlbeans-2.3.0.jar" size="2883254" download="eager" />
+  </resources>
+  <applet-desc  width="0" height="0" main-class="com.javafx.main.NoJavaFXFallback"  name="CMPETimeTable" >
+    <param name="requiredFXVersion" value="2.2+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="0" height="0" main-class="main.CapstoneProject"  name="CMPETimeTable" />
+  <update check="background"/>
+</jnlp>

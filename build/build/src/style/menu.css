@@ -1,0 +1,28 @@
+/**
+ * Department of Computer Engineering, Eastern Mediterranean University.
+ * @link http://cmpe.emu.edu.tr
+ * 
+ * @author Sakit Atakishiyev, Std. ID: 117319
+ * @version 1.0.0.1
+ */
+.menu-bar{
+   -fx-background-image: url("../images/default-header-bg.png");
+}
+
+.menu .label{
+    -fx-text-fill: white;
+    -fx-font-size: 12pt;
+}
+
+.menu:showing, .menu:hover{
+    -fx-background-color: fcb131;
+}
+
+.menu:hover .label, .menu:showing .label{
+    -fx-text-fill: rgb(53, 91, 130);
+    -fx-font-weight:bold;
+}
+
+.menu-item:focused{
+    -fx-background-color: fcb131;
+}

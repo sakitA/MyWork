@@ -1,0 +1,35 @@
+/**
+ * Department of Computer Engineering, Eastern Mediterranean University.
+ * @link http://cmpe.emu.edu.tr
+ * 
+ * @author Sakit Atakishiyev, Std. ID: 117319
+ * @version 1.0.0.1
+ */
+/* 
+    Created on : Jun 22, 2014, 6:32:28 PM
+    Author     : Sakit
+*/
+
+.button{
+    -fx-background-color:linear-gradient(to top right, rgb(53, 91, 130), #001d63);
+    -fx-text-fill:white;
+    -fx-background-radius: 15;
+}
+
+.button .text{
+    -fx-font-size:16pt;    
+    -fx-font-weight:bold;
+    -fx-font-family: "Helvetica";
+    -fx-effect: dropshadow( one-pass-box , rgba(0,0,0,0.8) , 0, 0.0 , 0 , -1 );
+}
+
+.button:hover{
+    -fx-background-color:linear-gradient(to top right, #001d63, rgb(53, 91, 130));
+    -fx-text-fill:aquamarine;
+}
+
+.root{
+    -fx-background-image:url("../images/department.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: stretch;
+}
