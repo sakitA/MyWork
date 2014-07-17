@@ -1,11 +1,11 @@
 ----------------------------------------------------------------
-Thu Jul 10 03:22:34 EEST 2014:
-Booting Derby version The Apache Software Foundation - Apache Derby - 10.10.2.0 - (1582446): instance a816c00e-0147-1da6-72f7-0000001cbb98 
-on database directory C:\Users\Sakit\workspace\CMPETimeTable\cmpe with class loader sun.misc.Launcher$AppClassLoader@1d16e93 
-Loaded from file:/C:/Users/Sakit/Documents/CapstoneProject/dist/lib/derby.jar
+Thu Jul 17 15:07:38 AZST 2014:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.10.2.0 - (1582446): instance a816c00e-0147-43ca-9cca-00000017e8c0 
+on database directory C:\Users\sakit_000\git\MyWork\cmpe with class loader sun.misc.Launcher$AppClassLoader@1d16e93 
+Loaded from file:/C:/Users/sakit_000/Google%20Drive/CMPETimeTable/build/dist/libs/derby.jar
 java.vendor=Oracle Corporation
 java.runtime.version=1.8.0_05-b13
-user.dir=C:\Users\Sakit\workspace\CMPETimeTable
+user.dir=C:\Users\sakit_000\git\MyWork
 os.name=Windows 8.1
 os.arch=x86
 os.version=6.3

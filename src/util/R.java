@@ -244,19 +244,26 @@ public class R {
         for (int i = 0; i < c.length; i++) {
             for (int j = i + 1; j < c.length; j++) {
                 if (c[i].getCourseLabRoomsCount() > c[j].getCourseLabRoomsCount()) {
-                    if(c[j].isLectureTimeFixed() || !c[i].isLectureTimeFixed())
                         swap(c, i, j);
                 } else if (c[i].getCourseLabRoomsCount() == c[j].getCourseLabRoomsCount()) {
                     if (TEACHERS.get(c[i].getTeacherName()).getTeacherRoomConstraintCount(c[i].getCourseName())
                             < TEACHERS.get(c[j].getTeacherName()).getTeacherRoomConstraintCount(c[j].getCourseName())) {
-                        if(c[i].isLectureTimeFixed() || !c[j].isLectureTimeFixed())
                             swap(c, i, j);
                     }
                 }
             }
         }
         ALLC.clear();
-        ALLC.addAll(Arrays.asList(c));
+        for(Course cr:c){
+        	if(cr.isLectureTimeFixed())
+        		ALLC.add(cr);        
+        }
+        
+        for(Course cr:c){
+        	if(!ALLC.contains(cr))
+        		ALLC.add(cr);        
+        }        
+        
     }
 
     private static void swap(Course[] c, int i, int j) {
