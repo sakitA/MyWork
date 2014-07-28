@@ -21,49 +21,49 @@
 		<mkdir dir="externalLibs" />
 		
 		<copy todir="externalLibs">
-			<fileset dir="C:\Users\Sakit\Documents\CapstoneProject\dist\lib">
+			<fileset dir="C:\Users\sakit_000\Documents\CapstoneProject\dist\lib">
 				<filename name="xmlbeans-2.3.0.jar"/>	
 			</fileset>
 		</copy>
 		<copy todir="externalLibs">
-			<fileset dir="C:\Users\Sakit\Documents\CapstoneProject\dist\lib">
+			<fileset dir="C:\Users\sakit_000\Documents\CapstoneProject\dist\lib">
 				<filename name="controlsfx-8.0.6.jar"/>	
 			</fileset>
 		</copy>
 		<copy todir="externalLibs">
-			<fileset dir="C:\Users\Sakit\Documents\CapstoneProject\dist\lib">
+			<fileset dir="C:\Users\sakit_000\Documents\CapstoneProject\dist\lib">
 				<filename name="poi-3.10-FINAL-20140208.jar"/>	
 			</fileset>
 		</copy>
 		<copy todir="externalLibs">
-			<fileset dir="C:\Users\Sakit\Documents\CapstoneProject\dist\lib">
+			<fileset dir="C:\Users\sakit_000\Documents\CapstoneProject\dist\lib">
 				<filename name="derby.jar"/>	
 			</fileset>
 		</copy>
 		<copy todir="externalLibs">
-			<fileset dir="C:\Users\Sakit\Documents\CapstoneProject\dist\lib">
+			<fileset dir="C:\Users\sakit_000\Documents\CapstoneProject\dist\lib">
 				<filename name="poi-ooxml-3.10-FINAL-20140208.jar"/>	
 			</fileset>
 		</copy>
 		<copy todir="externalLibs">
-			<fileset dir="C:\Users\Sakit\Documents\CapstoneProject\dist\lib">
+			<fileset dir="C:\Users\sakit_000\Documents\CapstoneProject\dist\lib">
 				<filename name="itextpdf-5.5.1.jar"/>	
 			</fileset>
 		</copy>
 		<copy todir="externalLibs">
-			<fileset dir="C:\Users\Sakit\Documents\CapstoneProject\dist\lib">
+			<fileset dir="C:\Users\sakit_000\Documents\CapstoneProject\dist\lib">
 				<filename name="poi-ooxml-schemas-3.10-FINAL-20140208.jar"/>	
 			</fileset>
 		</copy>
 		<copy todir="externalLibs">
-			<fileset dir="C:\Users\Sakit\Documents\CapstoneProject\dist\lib">
+			<fileset dir="C:\Users\sakit_000\Documents\CapstoneProject\dist\lib">
 				<filename name="dom4j-1.6.1.jar"/>	
 			</fileset>
 		</copy>
 		
 		<mkdir dir="project" />
 		<copy todir="project">
-			<fileset dir="C:\Users\Sakit\workspace\CMPETimeTable">
+			<fileset dir="C:\Users\sakit_000\git\MyWork">
 				<include name="src/**" />
 			</fileset>
 		</copy>

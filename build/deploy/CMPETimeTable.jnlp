@@ -11,7 +11,7 @@
   </resources>
   <resources>
     <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
-    <jar href="CMPETimeTable.jar" size="11294248" download="eager" />
+    <jar href="CMPETimeTable.jar" size="11294267" download="eager" />
     <jar href="libs/controlsfx-8.0.6.jar" size="916060" download="eager" />
     <jar href="libs/derby.jar" size="3019168" download="eager" />
     <jar href="libs/dom4j-1.6.1.jar" size="332530" download="eager" />

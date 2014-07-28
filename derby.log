@@ -1,6 +1,6 @@
 ----------------------------------------------------------------
-Thu Jul 17 15:07:38 AZST 2014:
-Booting Derby version The Apache Software Foundation - Apache Derby - 10.10.2.0 - (1582446): instance a816c00e-0147-43ca-9cca-00000017e8c0 
+Sat Jul 26 11:05:03 AZST 2014:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.10.2.0 - (1582446): instance a816c00e-0147-7145-c00e-0000001744c8 
 on database directory C:\Users\sakit_000\git\MyWork\cmpe with class loader sun.misc.Launcher$AppClassLoader@1d16e93 
 Loaded from file:/C:/Users/sakit_000/Google%20Drive/CMPETimeTable/build/dist/libs/derby.jar
 java.vendor=Oracle Corporation
